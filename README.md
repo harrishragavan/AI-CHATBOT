@@ -55,4 +55,7 @@ npm install
 # Run the development server
 npm run dev
 
+# For backend Server
+node server.js
+
 
