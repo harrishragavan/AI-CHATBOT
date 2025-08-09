@@ -52,10 +52,12 @@ cd REPO-NAME
 # Install dependencies
 npm install
 
-# Run the development server
+# To run the Frontend  
 npm run dev
 
 # For backend Server
 node server.js
+
+# Replace the API Key Before You Use!!
 
 
