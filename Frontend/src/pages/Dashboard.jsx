@@ -328,7 +328,7 @@ const Dashboard = () => {
   // Load chat history
   const loadHistory = async (userId) => {
     try {
-      const res = await axios.get(`http://localhost:5000/api/history/${userId}`)
+      const res = await axios.get(`https://ai-chatbot-r586.onrender.com/api/history/${userId}`)
       setChatLog(res.data.reverse())
     } catch (err) {
       console.error('Failed to load history', err)
@@ -345,7 +345,7 @@ const Dashboard = () => {
     setIsThinking(true)
 
     try {
-      const res = await axios.post('http://localhost:5000/api/chat', {
+      const res = await axios.post('https://ai-chatbot-r586.onrender.com/api/chat', {
         userId: user.uid,
         username: user.displayName,
         message,
