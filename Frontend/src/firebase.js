@@ -4,13 +4,13 @@ import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyB6p_Hjb-MG4lpBQqClMOmuHSZ7GqGL_-A",
-  authDomain: "chatbot-efec8.firebaseapp.com",
-  projectId: "chatbot-efec8",
-  storageBucket: "chatbot-efec8.firebasestorage.app",
-  messagingSenderId: "363038804794",
-  appId: "1:363038804794:web:7b9cf924f1bd0b5860de03",
-  measurementId: "G-0VFMQGBZJX"
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
+  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID,
 };
 
 const app = initializeApp(firebaseConfig);
